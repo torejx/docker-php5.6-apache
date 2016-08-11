@@ -18,4 +18,5 @@ RUN chmod +x /usr/local/bin/install-composer
 RUN ["install-composer"]
 
 CMD ["apache-start"]
+
 EXPOSE 80
