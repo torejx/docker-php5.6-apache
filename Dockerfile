@@ -10,6 +10,9 @@ RUN apt-get install -y git
 
 ENV TERM xterm
 
+RUN a2enmod rewrite
+RUN a2enmod alias
+
 COPY apache-start.sh /usr/local/bin/apache-start
 RUN chmod +x /usr/local/bin/apache-start
 
