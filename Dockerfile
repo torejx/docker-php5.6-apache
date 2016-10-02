@@ -12,6 +12,9 @@ RUN gem install sass
 
 ENV TERM xterm
 
+COPY aliases /tmp/aliases
+RUN cat /tmp/aliases >> /root/.bashrc
+
 RUN a2enmod rewrite
 RUN a2enmod alias
 
